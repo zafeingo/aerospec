@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		938E58C61D457D0D004C580F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E58C51D457D0D004C580F /* AppDelegate.swift */; };
+		938E58C81D457D0D004C580F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E58C71D457D0D004C580F /* ViewController.swift */; };
+		938E58CB1D457D0D004C580F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938E58C91D457D0D004C580F /* Main.storyboard */; };
+		938E58CD1D457D0D004C580F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938E58CC1D457D0D004C580F /* Assets.xcassets */; };
+		938E58D01D457D0D004C580F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938E58CE1D457D0D004C580F /* LaunchScreen.storyboard */; };
+		938E58DB1D457D0D004C580F /* AeroSpecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E58DA1D457D0D004C580F /* AeroSpecTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		938E58D71D457D0D004C580F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938E58BA1D457D0D004C580F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 938E58C11D457D0D004C580F;
+			remoteInfo = AeroSpec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		938E58C21D457D0D004C580F /* AeroSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		938E58C51D457D0D004C580F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		938E58C71D457D0D004C580F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		938E58CA1D457D0D004C580F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		938E58CC1D457D0D004C580F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		938E58CF1D457D0D004C580F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		938E58D11D457D0D004C580F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938E58D61D457D0D004C580F /* AeroSpecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AeroSpecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		938E58DA1D457D0D004C580F /* AeroSpecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AeroSpecTests.swift; sourceTree = "<group>"; };
+		938E58DC1D457D0D004C580F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		938E58BF1D457D0D004C580F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938E58D31D457D0D004C580F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		938E58B91D457D0D004C580F = {
+			isa = PBXGroup;
+			children = (
+				938E58C41D457D0D004C580F /* AeroSpec */,
+				938E58D91D457D0D004C580F /* AeroSpecTests */,
+				938E58C31D457D0D004C580F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		938E58C31D457D0D004C580F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				938E58C21D457D0D004C580F /* AeroSpec.app */,
+				938E58D61D457D0D004C580F /* AeroSpecTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		938E58C41D457D0D004C580F /* AeroSpec */ = {
+			isa = PBXGroup;
+			children = (
+				938E58C51D457D0D004C580F /* AppDelegate.swift */,
+				938E58C71D457D0D004C580F /* ViewController.swift */,
+				938E58C91D457D0D004C580F /* Main.storyboard */,
+				938E58CC1D457D0D004C580F /* Assets.xcassets */,
+				938E58CE1D457D0D004C580F /* LaunchScreen.storyboard */,
+				938E58D11D457D0D004C580F /* Info.plist */,
+			);
+			path = AeroSpec;
+			sourceTree = "<group>";
+		};
+		938E58D91D457D0D004C580F /* AeroSpecTests */ = {
+			isa = PBXGroup;
+			children = (
+				938E58DA1D457D0D004C580F /* AeroSpecTests.swift */,
+				938E58DC1D457D0D004C580F /* Info.plist */,
+			);
+			path = AeroSpecTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		938E58C11D457D0D004C580F /* AeroSpec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938E58DF1D457D0D004C580F /* Build configuration list for PBXNativeTarget "AeroSpec" */;
+			buildPhases = (
+				938E58BE1D457D0D004C580F /* Sources */,
+				938E58BF1D457D0D004C580F /* Frameworks */,
+				938E58C01D457D0D004C580F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AeroSpec;
+			productName = AeroSpec;
+			productReference = 938E58C21D457D0D004C580F /* AeroSpec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		938E58D51D457D0D004C580F /* AeroSpecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938E58E21D457D0D004C580F /* Build configuration list for PBXNativeTarget "AeroSpecTests" */;
+			buildPhases = (
+				938E58D21D457D0D004C580F /* Sources */,
+				938E58D31D457D0D004C580F /* Frameworks */,
+				938E58D41D457D0D004C580F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938E58D81D457D0D004C580F /* PBXTargetDependency */,
+			);
+			name = AeroSpecTests;
+			productName = AeroSpecTests;
+			productReference = 938E58D61D457D0D004C580F /* AeroSpecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		938E58BA1D457D0D004C580F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = nrg;
+				TargetAttributes = {
+					938E58C11D457D0D004C580F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					938E58D51D457D0D004C580F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 938E58C11D457D0D004C580F;
+					};
+				};
+			};
+			buildConfigurationList = 938E58BD1D457D0D004C580F /* Build configuration list for PBXProject "AeroSpec" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 938E58B91D457D0D004C580F;
+			productRefGroup = 938E58C31D457D0D004C580F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				938E58C11D457D0D004C580F /* AeroSpec */,
+				938E58D51D457D0D004C580F /* AeroSpecTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		938E58C01D457D0D004C580F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938E58D01D457D0D004C580F /* LaunchScreen.storyboard in Resources */,
+				938E58CD1D457D0D004C580F /* Assets.xcassets in Resources */,
+				938E58CB1D457D0D004C580F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938E58D41D457D0D004C580F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		938E58BE1D457D0D004C580F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938E58C81D457D0D004C580F /* ViewController.swift in Sources */,
+				938E58C61D457D0D004C580F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938E58D21D457D0D004C580F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938E58DB1D457D0D004C580F /* AeroSpecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		938E58D81D457D0D004C580F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 938E58C11D457D0D004C580F /* AeroSpec */;
+			targetProxy = 938E58D71D457D0D004C580F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		938E58C91D457D0D004C580F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				938E58CA1D457D0D004C580F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		938E58CE1D457D0D004C580F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				938E58CF1D457D0D004C580F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		938E58DD1D457D0D004C580F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		938E58DE1D457D0D004C580F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		938E58E01D457D0D004C580F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AeroSpec/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nrg-lab.AeroSpec";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		938E58E11D457D0D004C580F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AeroSpec/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nrg-lab.AeroSpec";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		938E58E31D457D0D004C580F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AeroSpecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nrg-lab.AeroSpecTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AeroSpec.app/AeroSpec";
+			};
+			name = Debug;
+		};
+		938E58E41D457D0D004C580F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AeroSpecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nrg-lab.AeroSpecTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AeroSpec.app/AeroSpec";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		938E58BD1D457D0D004C580F /* Build configuration list for PBXProject "AeroSpec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938E58DD1D457D0D004C580F /* Debug */,
+				938E58DE1D457D0D004C580F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938E58DF1D457D0D004C580F /* Build configuration list for PBXNativeTarget "AeroSpec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938E58E01D457D0D004C580F /* Debug */,
+				938E58E11D457D0D004C580F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		938E58E21D457D0D004C580F /* Build configuration list for PBXNativeTarget "AeroSpecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938E58E31D457D0D004C580F /* Debug */,
+				938E58E41D457D0D004C580F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 938E58BA1D457D0D004C580F /* Project object */;
+}
