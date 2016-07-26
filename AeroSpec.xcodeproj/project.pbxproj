@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933270771D46E591007883E7 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933270751D46E590007883E7 /* LoginScreenViewController.swift */; };
+		933270781D46E591007883E7 /* LoginScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 933270761D46E591007883E7 /* LoginScreenViewController.xib */; };
+		937468491D45BFBA000B001B /* Graphics in Resources */ = {isa = PBXBuildFile; fileRef = 937468481D45BFBA000B001B /* Graphics */; };
+		9374684B1D45C0B9000B001B /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 9374684A1D45C0B9000B001B /* Fonts */; };
 		938E58C61D457D0D004C580F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E58C51D457D0D004C580F /* AppDelegate.swift */; };
 		938E58C81D457D0D004C580F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E58C71D457D0D004C580F /* ViewController.swift */; };
 		938E58CB1D457D0D004C580F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938E58C91D457D0D004C580F /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		933270751D46E590007883E7 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		933270761D46E591007883E7 /* LoginScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginScreenViewController.xib; sourceTree = "<group>"; };
+		937468481D45BFBA000B001B /* Graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Graphics; sourceTree = "<group>"; };
+		9374684A1D45C0B9000B001B /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		938E58C21D457D0D004C580F /* AeroSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938E58C51D457D0D004C580F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		938E58C71D457D0D004C580F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,11 +85,15 @@
 		938E58C41D457D0D004C580F /* AeroSpec */ = {
 			isa = PBXGroup;
 			children = (
+				937468481D45BFBA000B001B /* Graphics */,
 				938E58C51D457D0D004C580F /* AppDelegate.swift */,
 				938E58C71D457D0D004C580F /* ViewController.swift */,
 				938E58C91D457D0D004C580F /* Main.storyboard */,
 				938E58CC1D457D0D004C580F /* Assets.xcassets */,
 				938E58CE1D457D0D004C580F /* LaunchScreen.storyboard */,
+				933270751D46E590007883E7 /* LoginScreenViewController.swift */,
+				933270761D46E591007883E7 /* LoginScreenViewController.xib */,
+				9374684A1D45C0B9000B001B /* Fonts */,
 				938E58D11D457D0D004C580F /* Info.plist */,
 			);
 			path = AeroSpec;
@@ -146,6 +158,7 @@
 				TargetAttributes = {
 					938E58C11D457D0D004C580F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KMD9H6XRAT;
 					};
 					938E58D51D457D0D004C580F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -177,8 +190,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9374684B1D45C0B9000B001B /* Fonts in Resources */,
 				938E58D01D457D0D004C580F /* LaunchScreen.storyboard in Resources */,
+				937468491D45BFBA000B001B /* Graphics in Resources */,
 				938E58CD1D457D0D004C580F /* Assets.xcassets in Resources */,
+				933270781D46E591007883E7 /* LoginScreenViewController.xib in Resources */,
 				938E58CB1D457D0D004C580F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +215,7 @@
 			files = (
 				938E58C81D457D0D004C580F /* ViewController.swift in Sources */,
 				938E58C61D457D0D004C580F /* AppDelegate.swift in Sources */,
+				933270771D46E591007883E7 /* LoginScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +344,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AeroSpec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "nrg-lab.AeroSpec";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nrg-lab.AeroSpec";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -338,10 +359,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AeroSpec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "nrg-lab.AeroSpec";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nrg-lab.AeroSpec";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -388,6 +413,7 @@
 				938E58E11D457D0D004C580F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		938E58E21D457D0D004C580F /* Build configuration list for PBXNativeTarget "AeroSpecTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +422,7 @@
 				938E58E41D457D0D004C580F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
