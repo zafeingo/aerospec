@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -11,6 +11,8 @@
             <string>Montserrat-Light</string>
         </mutableArray>
         <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
@@ -352,25 +354,44 @@
                                     <segue destination="x6d-Ya-S2Y" kind="modal" identifier="BackScanToMenu" id="z0v-oW-cBv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START A NEW SCAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggU-eB-azr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="START A NEW SCAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggU-eB-azr">
                                 <rect key="frame" x="70" y="98" width="235" height="28"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="23"/>
                                 <color key="textColor" red="0.079888423410000006" green="0.11544820660000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUj-K0-QMS">
-                                <rect key="frame" x="164" y="267" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nz9-fM-L7O">
+                                <rect key="frame" x="12" y="200" width="350" height="70"/>
+                                <state key="normal" title="OutdoorButton" image="InOutDoorDeselect.png"/>
+                                <state key="selected" title="Selected" image="InOutDoorSelect.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Outdoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q6-QY-LDJ">
+                                <rect key="frame" x="145" y="225" width="84" height="24"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcf-NF-Kot">
+                                <rect key="frame" x="12" y="300" width="350" height="70"/>
+                                <state key="normal" title="IndoorButton" image="InOutDoorDeselect.png"/>
+                                <state key="selected" title="Selected" image="InOutDoorSelect.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WF-TO-Ojm">
+                                <rect key="frame" x="154" y="322" width="66" height="24"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxR-g4-NXI">
+                                <rect key="frame" x="164" y="547" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cUj-K0-QMS" firstAttribute="centerX" secondItem="TV7-M5-JAU" secondAttribute="centerX" id="9UI-HP-myC"/>
                             <constraint firstItem="rgT-FE-jiN" firstAttribute="top" secondItem="1QE-a9-brE" secondAttribute="bottom" constant="8" symbolic="YES" id="A6n-iB-CSv"/>
                             <constraint firstItem="FmO-Po-foy" firstAttribute="top" secondItem="rgT-FE-jiN" secondAttribute="bottom" constant="604" id="Fup-Pt-hLP"/>
-                            <constraint firstItem="FmO-Po-foy" firstAttribute="top" secondItem="cUj-K0-QMS" secondAttribute="bottom" constant="370" id="LW3-xj-HSk"/>
                             <constraint firstItem="ggU-eB-azr" firstAttribute="top" secondItem="1QE-a9-brE" secondAttribute="bottom" constant="78" id="UhL-Ye-GaD"/>
-                            <constraint firstItem="ggU-eB-azr" firstAttribute="centerX" secondItem="cUj-K0-QMS" secondAttribute="centerX" id="WZs-kw-4zp"/>
                             <constraint firstItem="ggU-eB-azr" firstAttribute="leading" secondItem="TV7-M5-JAU" secondAttribute="leadingMargin" constant="54" id="auS-d6-cl0"/>
                             <constraint firstItem="rgT-FE-jiN" firstAttribute="leading" secondItem="TV7-M5-JAU" secondAttribute="leadingMargin" constant="4" id="ezF-h0-534"/>
                         </constraints>
@@ -388,12 +409,14 @@
         <image name="AnalyzeBlueButton.png" width="2229" height="403"/>
         <image name="BlueOutline-Button.png" width="903" height="247"/>
         <image name="FilterYellowButton.png" width="2229" height="403"/>
+        <image name="InOutDoorDeselect.png" width="1695" height="303"/>
+        <image name="InOutDoorSelect.png" width="1695" height="303"/>
         <image name="PersonalScansGreenButton.png" width="2229" height="403"/>
         <image name="PinkButton.png" width="903" height="247"/>
         <image name="PinkProfileCircle.png" width="163" height="163"/>
         <image name="StartScanPinkButton.png" width="2229" height="403"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hcu-qn-7du"/>
+        <segue reference="z0v-oW-cBv"/>
     </inferredMetricsTieBreakers>
 </document>
