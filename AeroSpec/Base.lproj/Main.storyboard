@@ -40,8 +40,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AERO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4W-iU-msn">
-                                <rect key="frame" x="84" y="217" width="104" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AERO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4W-iU-msn">
+                                <rect key="frame" x="80" y="217" width="112" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="Fxj-wB-VoJ"/>
                                 </constraints>
@@ -49,8 +49,8 @@
                                 <color key="textColor" red="0.1764705882" green="0.20784313730000001" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SPEC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkk-QU-70b">
-                                <rect key="frame" x="188" y="218" width="86" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkk-QU-70b">
+                                <rect key="frame" x="192" y="218" width="86" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="bb4-sm-BFp"/>
                                     <constraint firstAttribute="width" constant="86" id="cs5-r7-Uev"/>
@@ -66,8 +66,8 @@
                                     <constraint firstAttribute="width" constant="135" id="QCo-xw-3pJ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-Ua-bFO">
-                                <rect key="frame" x="28" y="569" width="150" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-Ua-bFO">
+                                <rect key="frame" x="24" y="569" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="U0W-Hg-Jpk"/>
                                     <constraint firstAttribute="width" constant="150" id="mgJ-C1-mWL"/>
@@ -80,29 +80,29 @@
                                     <segue destination="x6d-Ya-S2Y" kind="presentation" id="J0C-Fz-rrx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-NZ-IKZ">
-                                <rect key="frame" x="196" y="569" width="150" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-NZ-IKZ">
+                                <rect key="frame" x="192" y="569" width="158" height="40"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
                                 <state key="normal" title="Register" backgroundImage="PinkButton.png"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wf0-qx-tbp">
-                                <rect key="frame" x="28" y="290" width="318" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wf0-qx-tbp">
+                                <rect key="frame" x="24" y="290" width="326" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aLx-fY-EBi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-UltraLight" family="Montserrat" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-zM-5Dr">
-                                <rect key="frame" x="28" y="367" width="318" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-zM-5Dr">
+                                <rect key="frame" x="24" y="367" width="326" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Wfy-Dz-IJv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-UltraLight" family="Montserrat" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-aj-m2o">
-                                <rect key="frame" x="244" y="418" width="102" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-aj-m2o">
+                                <rect key="frame" x="248" y="418" width="102" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="102" id="6sG-yV-8ot"/>
                                     <constraint firstAttribute="height" constant="30" id="Jy2-oU-es8"/>
@@ -145,6 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="339.5" y="356.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8vI-Db-re3">
@@ -276,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2H-33-07x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300.5" y="356.5"/>
+            <point key="canvasLocation" x="1256.5" y="356.5"/>
         </scene>
     </scenes>
     <resources>
