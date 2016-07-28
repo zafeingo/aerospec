@@ -7,8 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		937468491D45BFBA000B001B /* Graphics in Resources */ = {isa = PBXBuildFile; fileRef = 937468481D45BFBA000B001B /* Graphics */; };
-		9374684B1D45C0B9000B001B /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 9374684A1D45C0B9000B001B /* Fonts */; };
+		932447BB1D499D38003C0F54 /* AnalyzeBlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A51D499D38003C0F54 /* AnalyzeBlueButton.png */; };
+		932447BC1D499D38003C0F54 /* BlueOutline-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A61D499D38003C0F54 /* BlueOutline-Button.png */; };
+		932447BD1D499D38003C0F54 /* BlueProfileCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A71D499D38003C0F54 /* BlueProfileCircle.png */; };
+		932447BE1D499D38003C0F54 /* CalibrateBlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A81D499D38003C0F54 /* CalibrateBlueButton.png */; };
+		932447BF1D499D38003C0F54 /* CyanProfileCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A91D499D38003C0F54 /* CyanProfileCircle.png */; };
+		932447C01D499D38003C0F54 /* FilterBlurred.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447AA1D499D38003C0F54 /* FilterBlurred.png */; };
+		932447C11D499D38003C0F54 /* FiltersShownGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447AB1D499D38003C0F54 /* FiltersShownGray.png */; };
+		932447C21D499D38003C0F54 /* FilterYellowButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447AC1D499D38003C0F54 /* FilterYellowButton.png */; };
+		932447C31D499D38003C0F54 /* GreenCheckmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447AD1D499D38003C0F54 /* GreenCheckmark.png */; };
+		932447C41D499D38003C0F54 /* GreenProfileCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447AE1D499D38003C0F54 /* GreenProfileCircle.png */; };
+		932447C51D499D38003C0F54 /* InOutDoorDeselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447AF1D499D38003C0F54 /* InOutDoorDeselect.png */; };
+		932447C61D499D38003C0F54 /* InOutDoorSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B01D499D38003C0F54 /* InOutDoorSelect.png */; };
+		932447C71D499D38003C0F54 /* NumFiltersSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B11D499D38003C0F54 /* NumFiltersSelect.png */; };
+		932447C81D499D38003C0F54 /* PersonalScansGreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B21D499D38003C0F54 /* PersonalScansGreenButton.png */; };
+		932447C91D499D38003C0F54 /* PinkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B31D499D38003C0F54 /* PinkButton.png */; };
+		932447CA1D499D38003C0F54 /* PinkProfileCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B41D499D38003C0F54 /* PinkProfileCircle.png */; };
+		932447CB1D499D38003C0F54 /* ResultsGreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B51D499D38003C0F54 /* ResultsGreenButton.png */; };
+		932447CC1D499D38003C0F54 /* StartScanPinkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B61D499D38003C0F54 /* StartScanPinkButton.png */; };
+		932447CD1D499D38003C0F54 /* StopScanningRedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B71D499D38003C0F54 /* StopScanningRedButton.png */; };
+		932447CE1D499D38003C0F54 /* TableItemBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B81D499D38003C0F54 /* TableItemBackground.png */; };
+		932447CF1D499D38003C0F54 /* TableItemDeselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447B91D499D38003C0F54 /* TableItemDeselect.png */; };
+		932447D01D499D38003C0F54 /* YellowProfileCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447BA1D499D38003C0F54 /* YellowProfileCircle.png */; };
+		932447DA1D499D5B003C0F54 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 932447D21D499D5B003C0F54 /* Montserrat-Black.otf */; };
+		932447DB1D499D5B003C0F54 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 932447D31D499D5B003C0F54 /* Montserrat-Bold.otf */; };
+		932447DC1D499D5B003C0F54 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 932447D41D499D5B003C0F54 /* Montserrat-ExtraBold.otf */; };
+		932447DD1D499D5B003C0F54 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 932447D51D499D5B003C0F54 /* Montserrat-Hairline.otf */; };
+		932447DE1D499D5B003C0F54 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 932447D61D499D5B003C0F54 /* Montserrat-Light.otf */; };
+		932447DF1D499D5B003C0F54 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 932447D71D499D5B003C0F54 /* Montserrat-Regular.otf */; };
+		932447E01D499D5B003C0F54 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 932447D81D499D5B003C0F54 /* Montserrat-SemiBold.otf */; };
+		932447E11D499D5B003C0F54 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 932447D91D499D5B003C0F54 /* Montserrat-UltraLight.otf */; };
 		938E58C61D457D0D004C580F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E58C51D457D0D004C580F /* AppDelegate.swift */; };
 		938E58C81D457D0D004C580F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E58C71D457D0D004C580F /* ViewController.swift */; };
 		938E58CB1D457D0D004C580F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938E58C91D457D0D004C580F /* Main.storyboard */; };
@@ -28,8 +56,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		937468481D45BFBA000B001B /* Graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Graphics; sourceTree = "<group>"; };
-		9374684A1D45C0B9000B001B /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		932447A51D499D38003C0F54 /* AnalyzeBlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AnalyzeBlueButton.png; path = Graphics/AnalyzeBlueButton.png; sourceTree = "<group>"; };
+		932447A61D499D38003C0F54 /* BlueOutline-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BlueOutline-Button.png"; path = "Graphics/BlueOutline-Button.png"; sourceTree = "<group>"; };
+		932447A71D499D38003C0F54 /* BlueProfileCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueProfileCircle.png; path = Graphics/BlueProfileCircle.png; sourceTree = "<group>"; };
+		932447A81D499D38003C0F54 /* CalibrateBlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CalibrateBlueButton.png; path = Graphics/CalibrateBlueButton.png; sourceTree = "<group>"; };
+		932447A91D499D38003C0F54 /* CyanProfileCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CyanProfileCircle.png; path = Graphics/CyanProfileCircle.png; sourceTree = "<group>"; };
+		932447AA1D499D38003C0F54 /* FilterBlurred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FilterBlurred.png; path = Graphics/FilterBlurred.png; sourceTree = "<group>"; };
+		932447AB1D499D38003C0F54 /* FiltersShownGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FiltersShownGray.png; path = Graphics/FiltersShownGray.png; sourceTree = "<group>"; };
+		932447AC1D499D38003C0F54 /* FilterYellowButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FilterYellowButton.png; path = Graphics/FilterYellowButton.png; sourceTree = "<group>"; };
+		932447AD1D499D38003C0F54 /* GreenCheckmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreenCheckmark.png; path = Graphics/GreenCheckmark.png; sourceTree = "<group>"; };
+		932447AE1D499D38003C0F54 /* GreenProfileCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreenProfileCircle.png; path = Graphics/GreenProfileCircle.png; sourceTree = "<group>"; };
+		932447AF1D499D38003C0F54 /* InOutDoorDeselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InOutDoorDeselect.png; path = Graphics/InOutDoorDeselect.png; sourceTree = "<group>"; };
+		932447B01D499D38003C0F54 /* InOutDoorSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = InOutDoorSelect.png; path = Graphics/InOutDoorSelect.png; sourceTree = "<group>"; };
+		932447B11D499D38003C0F54 /* NumFiltersSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NumFiltersSelect.png; path = Graphics/NumFiltersSelect.png; sourceTree = "<group>"; };
+		932447B21D499D38003C0F54 /* PersonalScansGreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PersonalScansGreenButton.png; path = Graphics/PersonalScansGreenButton.png; sourceTree = "<group>"; };
+		932447B31D499D38003C0F54 /* PinkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PinkButton.png; path = Graphics/PinkButton.png; sourceTree = "<group>"; };
+		932447B41D499D38003C0F54 /* PinkProfileCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PinkProfileCircle.png; path = Graphics/PinkProfileCircle.png; sourceTree = "<group>"; };
+		932447B51D499D38003C0F54 /* ResultsGreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ResultsGreenButton.png; path = Graphics/ResultsGreenButton.png; sourceTree = "<group>"; };
+		932447B61D499D38003C0F54 /* StartScanPinkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartScanPinkButton.png; path = Graphics/StartScanPinkButton.png; sourceTree = "<group>"; };
+		932447B71D499D38003C0F54 /* StopScanningRedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StopScanningRedButton.png; path = Graphics/StopScanningRedButton.png; sourceTree = "<group>"; };
+		932447B81D499D38003C0F54 /* TableItemBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TableItemBackground.png; path = Graphics/TableItemBackground.png; sourceTree = "<group>"; };
+		932447B91D499D38003C0F54 /* TableItemDeselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TableItemDeselect.png; path = Graphics/TableItemDeselect.png; sourceTree = "<group>"; };
+		932447BA1D499D38003C0F54 /* YellowProfileCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YellowProfileCircle.png; path = Graphics/YellowProfileCircle.png; sourceTree = "<group>"; };
+		932447D21D499D5B003C0F54 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.otf"; path = "Fonts/Montserrat-Black.otf"; sourceTree = "<group>"; };
+		932447D31D499D5B003C0F54 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.otf"; path = "Fonts/Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		932447D41D499D5B003C0F54 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.otf"; path = "Fonts/Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		932447D51D499D5B003C0F54 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Hairline.otf"; path = "Fonts/Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		932447D61D499D5B003C0F54 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.otf"; path = "Fonts/Montserrat-Light.otf"; sourceTree = "<group>"; };
+		932447D71D499D5B003C0F54 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "Fonts/Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		932447D81D499D5B003C0F54 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.otf"; path = "Fonts/Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		932447D91D499D5B003C0F54 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-UltraLight.otf"; path = "Fonts/Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
 		938E58C21D457D0D004C580F /* AeroSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938E58C51D457D0D004C580F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		938E58C71D457D0D004C580F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +116,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		932447A41D499D23003C0F54 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				932447A51D499D38003C0F54 /* AnalyzeBlueButton.png */,
+				932447A61D499D38003C0F54 /* BlueOutline-Button.png */,
+				932447A71D499D38003C0F54 /* BlueProfileCircle.png */,
+				932447A81D499D38003C0F54 /* CalibrateBlueButton.png */,
+				932447A91D499D38003C0F54 /* CyanProfileCircle.png */,
+				932447AA1D499D38003C0F54 /* FilterBlurred.png */,
+				932447AB1D499D38003C0F54 /* FiltersShownGray.png */,
+				932447AC1D499D38003C0F54 /* FilterYellowButton.png */,
+				932447AD1D499D38003C0F54 /* GreenCheckmark.png */,
+				932447AE1D499D38003C0F54 /* GreenProfileCircle.png */,
+				932447AF1D499D38003C0F54 /* InOutDoorDeselect.png */,
+				932447B01D499D38003C0F54 /* InOutDoorSelect.png */,
+				932447B11D499D38003C0F54 /* NumFiltersSelect.png */,
+				932447B21D499D38003C0F54 /* PersonalScansGreenButton.png */,
+				932447B31D499D38003C0F54 /* PinkButton.png */,
+				932447B41D499D38003C0F54 /* PinkProfileCircle.png */,
+				932447B51D499D38003C0F54 /* ResultsGreenButton.png */,
+				932447B61D499D38003C0F54 /* StartScanPinkButton.png */,
+				932447B71D499D38003C0F54 /* StopScanningRedButton.png */,
+				932447B81D499D38003C0F54 /* TableItemBackground.png */,
+				932447B91D499D38003C0F54 /* TableItemDeselect.png */,
+				932447BA1D499D38003C0F54 /* YellowProfileCircle.png */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		932447D11D499D4B003C0F54 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				932447D21D499D5B003C0F54 /* Montserrat-Black.otf */,
+				932447D31D499D5B003C0F54 /* Montserrat-Bold.otf */,
+				932447D41D499D5B003C0F54 /* Montserrat-ExtraBold.otf */,
+				932447D51D499D5B003C0F54 /* Montserrat-Hairline.otf */,
+				932447D61D499D5B003C0F54 /* Montserrat-Light.otf */,
+				932447D71D499D5B003C0F54 /* Montserrat-Regular.otf */,
+				932447D81D499D5B003C0F54 /* Montserrat-SemiBold.otf */,
+				932447D91D499D5B003C0F54 /* Montserrat-UltraLight.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		938E58B91D457D0D004C580F = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +181,13 @@
 		938E58C41D457D0D004C580F /* AeroSpec */ = {
 			isa = PBXGroup;
 			children = (
-				937468481D45BFBA000B001B /* Graphics */,
+				932447D11D499D4B003C0F54 /* Fonts */,
+				932447A41D499D23003C0F54 /* Graphics */,
 				938E58C51D457D0D004C580F /* AppDelegate.swift */,
 				938E58C71D457D0D004C580F /* ViewController.swift */,
 				938E58C91D457D0D004C580F /* Main.storyboard */,
 				938E58CC1D457D0D004C580F /* Assets.xcassets */,
 				938E58CE1D457D0D004C580F /* LaunchScreen.storyboard */,
-				9374684A1D45C0B9000B001B /* Fonts */,
 				938E58D11D457D0D004C580F /* Info.plist */,
 			);
 			path = AeroSpec;
@@ -184,11 +284,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9374684B1D45C0B9000B001B /* Fonts in Resources */,
+				932447CE1D499D38003C0F54 /* TableItemBackground.png in Resources */,
+				932447C71D499D38003C0F54 /* NumFiltersSelect.png in Resources */,
+				932447C01D499D38003C0F54 /* FilterBlurred.png in Resources */,
+				932447BB1D499D38003C0F54 /* AnalyzeBlueButton.png in Resources */,
+				932447BF1D499D38003C0F54 /* CyanProfileCircle.png in Resources */,
+				932447C51D499D38003C0F54 /* InOutDoorDeselect.png in Resources */,
 				938E58D01D457D0D004C580F /* LaunchScreen.storyboard in Resources */,
-				937468491D45BFBA000B001B /* Graphics in Resources */,
+				932447D01D499D38003C0F54 /* YellowProfileCircle.png in Resources */,
+				932447BD1D499D38003C0F54 /* BlueProfileCircle.png in Resources */,
+				932447C61D499D38003C0F54 /* InOutDoorSelect.png in Resources */,
+				932447C41D499D38003C0F54 /* GreenProfileCircle.png in Resources */,
+				932447E11D499D5B003C0F54 /* Montserrat-UltraLight.otf in Resources */,
+				932447C11D499D38003C0F54 /* FiltersShownGray.png in Resources */,
+				932447BE1D499D38003C0F54 /* CalibrateBlueButton.png in Resources */,
+				932447C81D499D38003C0F54 /* PersonalScansGreenButton.png in Resources */,
+				932447BC1D499D38003C0F54 /* BlueOutline-Button.png in Resources */,
+				932447C21D499D38003C0F54 /* FilterYellowButton.png in Resources */,
+				932447C31D499D38003C0F54 /* GreenCheckmark.png in Resources */,
+				932447E01D499D5B003C0F54 /* Montserrat-SemiBold.otf in Resources */,
+				932447DD1D499D5B003C0F54 /* Montserrat-Hairline.otf in Resources */,
+				932447CA1D499D38003C0F54 /* PinkProfileCircle.png in Resources */,
+				932447CD1D499D38003C0F54 /* StopScanningRedButton.png in Resources */,
+				932447CF1D499D38003C0F54 /* TableItemDeselect.png in Resources */,
 				938E58CD1D457D0D004C580F /* Assets.xcassets in Resources */,
+				932447DA1D499D5B003C0F54 /* Montserrat-Black.otf in Resources */,
+				932447DE1D499D5B003C0F54 /* Montserrat-Light.otf in Resources */,
+				932447DB1D499D5B003C0F54 /* Montserrat-Bold.otf in Resources */,
+				932447DC1D499D5B003C0F54 /* Montserrat-ExtraBold.otf in Resources */,
+				932447DF1D499D5B003C0F54 /* Montserrat-Regular.otf in Resources */,
 				938E58CB1D457D0D004C580F /* Main.storyboard in Resources */,
+				932447CB1D499D38003C0F54 /* ResultsGreenButton.png in Resources */,
+				932447C91D499D38003C0F54 /* PinkButton.png in Resources */,
+				932447CC1D499D38003C0F54 /* StartScanPinkButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

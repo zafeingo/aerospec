@@ -66,7 +66,7 @@
                                     <constraint firstAttribute="width" constant="135" id="QCo-xw-3pJ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-Ua-bFO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-Ua-bFO">
                                 <rect key="frame" x="24" y="569" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="U0W-Hg-Jpk"/>
@@ -75,6 +75,7 @@
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
                                 <state key="normal" title="Log in" backgroundImage="BlueOutline-Button.png">
                                     <color key="titleColor" red="0.1764705882" green="0.20784313730000001" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.14376052819999999" green="1" blue="0.10219121389999999" alpha="0.75" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="x6d-Ya-S2Y" kind="presentation" id="J0C-Fz-rrx"/>
