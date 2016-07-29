@@ -26,6 +26,8 @@
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
         <mutableArray key="Montserrat-UltraLight.otf">
             <string>Montserrat-UltraLight</string>
@@ -199,6 +201,26 @@
                                     <segue destination="x6d-Ya-S2Y" kind="modal" id="ykn-Gg-Cp9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qO-rl-69E">
+                                <rect key="frame" x="20" y="607" width="150" height="40"/>
+                                <state key="normal" title="Button" image="BlueOutline-Button.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rename" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gr1-KB-6W7">
+                                <rect key="frame" x="64" y="618" width="63" height="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.14811174468404598" green="0.14789972667592033" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3f-wb-ndI">
+                                <rect key="frame" x="200" y="607" width="150" height="40"/>
+                                <state key="normal" title="Button" image="PinkButton.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTQ-Aw-C4f">
+                                <rect key="frame" x="251" y="618" width="49" height="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -316,10 +338,10 @@
             </objects>
             <point key="canvasLocation" x="0.5" y="1198.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Scan Type View Controller-->
         <scene sceneID="8VC-74-SXk">
             <objects>
-                <viewController id="2aB-fS-oZM" sceneMemberID="viewController">
+                <viewController id="2aB-fS-oZM" customClass="SelectScanTypeViewController" customModule="AeroSpec" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1QE-a9-brE"/>
                         <viewControllerLayoutGuide type="bottom" id="FmO-Po-foy"/>
@@ -351,6 +373,9 @@
                                 <rect key="frame" x="12" y="200" width="350" height="70"/>
                                 <state key="normal" title="OutdoorButton" image="InOutDoorDeselect.png"/>
                                 <state key="selected" title="Selected" image="InOutDoorSelect.png"/>
+                                <connections>
+                                    <action selector="outdoorTap:" destination="2aB-fS-oZM" eventType="touchUpInside" id="2Sc-Ja-ekB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Outdoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q6-QY-LDJ">
                                 <rect key="frame" x="145" y="225" width="84" height="24"/>
@@ -362,6 +387,9 @@
                                 <rect key="frame" x="12" y="300" width="350" height="70"/>
                                 <state key="normal" title="IndoorButton" image="InOutDoorDeselect.png"/>
                                 <state key="selected" title="Selected" image="InOutDoorSelect.png"/>
+                                <connections>
+                                    <action selector="indoorTap:" destination="2aB-fS-oZM" eventType="touchUpInside" id="dhh-4d-b4c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WF-TO-Ojm">
                                 <rect key="frame" x="154" y="322" width="66" height="24"/>
@@ -392,6 +420,10 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="indoorButton" destination="mcf-NF-Kot" id="qgB-jE-QvT"/>
+                        <outlet property="outdoorButton" destination="Nz9-fM-L7O" id="ZTz-NO-1OE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2H-33-07x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,6 +443,6 @@
         <image name="StartScanPinkButton.png" width="2229" height="403"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z0v-oW-cBv"/>
+        <segue reference="ykn-Gg-Cp9"/>
     </inferredMetricsTieBreakers>
 </document>
