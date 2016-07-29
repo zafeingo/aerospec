@@ -20,6 +20,8 @@ class BuyFilterPageViewController: UIViewController {
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight] // for supporting device rotation
         view.addSubview(blurEffectView)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
