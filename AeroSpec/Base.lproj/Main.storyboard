@@ -139,7 +139,7 @@
                                 <rect key="frame" x="12" y="449" width="350" height="70"/>
                                 <state key="normal" title="Button" image="FilterYellowButton.png"/>
                                 <connections>
-                                    <segue destination="wsZ-7L-iIk" kind="modal" id="fot-da-0Wx"/>
+                                    <segue destination="wsZ-7L-iIk" kind="modal" id="d0f-gx-aVu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start a New Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIu-yT-G6X">
@@ -528,9 +528,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FilterBlurred.png" translatesAutoresizingMaskIntoConstraints="NO" id="C23-BC-2VX">
-                                <rect key="frame" x="67" y="192" width="262" height="206"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
