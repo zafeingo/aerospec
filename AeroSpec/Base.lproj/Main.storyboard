@@ -32,6 +32,10 @@
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
         <mutableArray key="Montserrat-UltraLight.otf">
             <string>Montserrat-UltraLight</string>
@@ -322,6 +326,45 @@
                                     <segue destination="x6d-Ya-S2Y" kind="modal" identifier="BackAnalyzeToMenu" id="YdD-FP-rkg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uth-ox-XfQ">
+                                <rect key="frame" x="112" y="105" width="150" height="40"/>
+                                <state key="normal" title="Button" image="CalibrateBlueButton.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calibrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19z-9f-ZGT">
+                                <rect key="frame" x="153" y="116" width="68" height="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FilterBlurred.png" translatesAutoresizingMaskIntoConstraints="NO" id="k3e-7s-fDN">
+                                <rect key="frame" x="-12" y="203" width="398" height="297"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouE-hL-e9h">
+                                <rect key="frame" x="148" y="216" width="78" height="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPw-G4-1ac">
+                                <rect key="frame" x="137" y="437" width="100" height="30"/>
+                                <state key="normal" title="Button" image="StopScanningRedButton.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stop Scanning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9J-wy-exB">
+                                <rect key="frame" x="151" y="446" width="73" height="12"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-oW-IXX">
+                                <rect key="frame" x="112" y="591" width="150" height="40"/>
+                                <state key="normal" title="Button" image="ResultsGreenButton.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wei-8e-KUx">
+                                <rect key="frame" x="160" y="602" width="55" height="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -485,6 +528,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FilterBlurred.png" translatesAutoresizingMaskIntoConstraints="NO" id="C23-BC-2VX">
+                                <rect key="frame" x="67" y="192" width="262" height="206"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -503,14 +549,18 @@
         <image name="2.png" width="383" height="383"/>
         <image name="AnalyzeBlueButton.png" width="2229" height="403"/>
         <image name="BlueOutline-Button.png" width="903" height="247"/>
+        <image name="CalibrateBlueButton.png" width="903" height="247"/>
+        <image name="FilterBlurred.png" width="1885" height="2537"/>
         <image name="FilterYellowButton.png" width="2229" height="403"/>
         <image name="InOutDoorDeselect.png" width="1695" height="303"/>
         <image name="InOutDoorSelect.png" width="1695" height="303"/>
         <image name="PersonalScansGreenButton.png" width="2229" height="403"/>
         <image name="PinkButton.png" width="903" height="247"/>
+        <image name="ResultsGreenButton.png" width="903" height="247"/>
         <image name="StartScanPinkButton.png" width="2229" height="403"/>
+        <image name="StopScanningRedButton.png" width="641" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z0v-oW-cBv"/>
+        <segue reference="YdD-FP-rkg"/>
     </inferredMetricsTieBreakers>
 </document>
