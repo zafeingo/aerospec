@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69B067841D4BCF3F0023FCFB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B067821D4BCF3F0023FCFB /* 1.png */; };
-		69B067851D4BCF3F0023FCFB /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B067831D4BCF3F0023FCFB /* 2.png */; };
+		69B067841D4BCF3F0023FCFB /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B067821D4BCF3F0023FCFB /* Logo.png */; };
+		69B067851D4BCF3F0023FCFB /* StartScanButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B067831D4BCF3F0023FCFB /* StartScanButton.png */; };
 		69B067871D4BE4B90023FCFB /* SelectScanTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B067861D4BE4B90023FCFB /* SelectScanTypeViewController.swift */; };
 		69B067891D4BE94B0023FCFB /* BuyFilterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B067881D4BE94B0023FCFB /* BuyFilterPageViewController.swift */; };
 		932447BB1D499D38003C0F54 /* AnalyzeBlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A51D499D38003C0F54 /* AnalyzeBlueButton.png */; };
@@ -60,8 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		69B067821D4BCF3F0023FCFB /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = "../../../Dropbox/Spring 2016/Summer 2016/AeroSpec Design Files/Sliced_Assets/missing_assets/1.png"; sourceTree = "<group>"; };
-		69B067831D4BCF3F0023FCFB /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = "../../../Dropbox/Spring 2016/Summer 2016/AeroSpec Design Files/Sliced_Assets/missing_assets/2.png"; sourceTree = "<group>"; };
+		69B067821D4BCF3F0023FCFB /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Graphics/Logo.png; sourceTree = "<group>"; };
+		69B067831D4BCF3F0023FCFB /* StartScanButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartScanButton.png; path = Graphics/StartScanButton.png; sourceTree = "<group>"; };
 		69B067861D4BE4B90023FCFB /* SelectScanTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectScanTypeViewController.swift; sourceTree = "<group>"; };
 		69B067881D4BE94B0023FCFB /* BuyFilterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyFilterPageViewController.swift; sourceTree = "<group>"; };
 		932447A51D499D38003C0F54 /* AnalyzeBlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AnalyzeBlueButton.png; path = Graphics/AnalyzeBlueButton.png; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 		932447A41D499D23003C0F54 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				69B067821D4BCF3F0023FCFB /* 1.png */,
-				69B067831D4BCF3F0023FCFB /* 2.png */,
+				69B067821D4BCF3F0023FCFB /* Logo.png */,
+				69B067831D4BCF3F0023FCFB /* StartScanButton.png */,
 				932447A51D499D38003C0F54 /* AnalyzeBlueButton.png */,
 				932447A61D499D38003C0F54 /* BlueOutline-Button.png */,
 				932447A71D499D38003C0F54 /* BlueProfileCircle.png */,
@@ -297,8 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				932447CE1D499D38003C0F54 /* TableItemBackground.png in Resources */,
-				69B067841D4BCF3F0023FCFB /* 1.png in Resources */,
-				69B067851D4BCF3F0023FCFB /* 2.png in Resources */,
+				69B067841D4BCF3F0023FCFB /* Logo.png in Resources */,
+				69B067851D4BCF3F0023FCFB /* StartScanButton.png in Resources */,
 				932447C71D499D38003C0F54 /* NumFiltersSelect.png in Resources */,
 				932447C01D499D38003C0F54 /* FilterBlurred.png in Resources */,
 				932447BB1D499D38003C0F54 /* AnalyzeBlueButton.png in Resources */,

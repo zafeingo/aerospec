@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="Montserrat-Regular.otf">
-            <string>Montserrat-Regular</string>
-        </mutableArray>
-        <mutableArray key="Montserrat-UltraLight.otf">
-            <string>Montserrat-UltraLight</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--LaunchScreen-->
         <scene sceneID="EHf-IW-A2E">
@@ -26,42 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AERO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7e-cW-ngw">
-                                <rect key="frame" x="87" y="388" width="104" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="jWI-86-cTx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="32"/>
-                                <color key="textColor" red="0.17647058823529413" green="0.20784313725490197" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0a-NI-dtc">
-                                <rect key="frame" x="191" y="389" width="96" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="8b8-G6-dkj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-UltraLight" family="Montserrat" pointSize="32"/>
-                                <color key="textColor" red="0.1764705882" green="0.20784313730000001" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinkProfileCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="6YH-uW-MXD">
-                                <rect key="frame" x="123" y="245" width="135" height="135"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="0Uc-HX-hZy"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z4d-l2-i9A">
+                                <rect key="frame" x="67" y="257" width="240" height="154"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="K0a-NI-dtc" secondAttribute="bottom" constant="245" id="18c-Kz-xc2"/>
-                            <constraint firstItem="6YH-uW-MXD" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="225" id="3i7-nF-nmG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="K0a-NI-dtc" secondAttribute="trailing" constant="72" id="Ejj-ge-j5q"/>
-                            <constraint firstItem="Y7e-cW-ngw" firstAttribute="top" secondItem="6YH-uW-MXD" secondAttribute="bottom" constant="8" symbolic="YES" id="a2d-M0-brI"/>
-                            <constraint firstItem="Y7e-cW-ngw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="71" id="ap1-Qr-ACC"/>
-                            <constraint firstItem="Y7e-cW-ngw" firstAttribute="firstBaseline" secondItem="K0a-NI-dtc" secondAttribute="firstBaseline" id="fC8-6x-0XB"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Y7e-cW-ngw" secondAttribute="bottom" constant="246" id="ho0-r2-YX9"/>
-                            <constraint firstItem="K0a-NI-dtc" firstAttribute="leading" secondItem="Y7e-cW-ngw" secondAttribute="trailing" id="ka6-bv-S0w"/>
-                            <constraint firstItem="6YH-uW-MXD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="123" id="ugC-ml-cUs"/>
+                            <constraint firstItem="Z4d-l2-i9A" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="51" id="CT6-xS-Oda"/>
+                            <constraint firstItem="Z4d-l2-i9A" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="237" id="JcT-E4-gNy"/>
+                            <constraint firstItem="Z4d-l2-i9A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fG8-9m-Ysc"/>
+                            <constraint firstItem="Z4d-l2-i9A" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hGp-uM-uv9"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -74,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PinkProfileCircle.png" width="163" height="163"/>
+        <image name="Logo.png" width="988" height="598"/>
     </resources>
 </document>
