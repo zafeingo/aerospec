@@ -13,14 +13,14 @@ class BuyFilterPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+/*
         // Do any additional setup after loading the view.
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight] // for supporting device rotation
         view.addSubview(blurEffectView)
-        self.view.frame = CGRectMake(50, 200, 300, 300);
+ */
       
     }
 
