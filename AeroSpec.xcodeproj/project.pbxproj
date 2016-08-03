@@ -11,6 +11,7 @@
 		69B067851D4BCF3F0023FCFB /* StartScanButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B067831D4BCF3F0023FCFB /* StartScanButton.png */; };
 		69B067871D4BE4B90023FCFB /* SelectScanTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B067861D4BE4B90023FCFB /* SelectScanTypeViewController.swift */; };
 		69B067891D4BE94B0023FCFB /* BuyFilterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B067881D4BE94B0023FCFB /* BuyFilterPageViewController.swift */; };
+		69CA45081D52690B0095402A /* PreviousScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA45071D52690B0095402A /* PreviousScanViewController.swift */; };
 		932447BB1D499D38003C0F54 /* AnalyzeBlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A51D499D38003C0F54 /* AnalyzeBlueButton.png */; };
 		932447BC1D499D38003C0F54 /* BlueOutline-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A61D499D38003C0F54 /* BlueOutline-Button.png */; };
 		932447BD1D499D38003C0F54 /* BlueProfileCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 932447A71D499D38003C0F54 /* BlueProfileCircle.png */; };
@@ -64,6 +65,7 @@
 		69B067831D4BCF3F0023FCFB /* StartScanButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartScanButton.png; path = Graphics/StartScanButton.png; sourceTree = "<group>"; };
 		69B067861D4BE4B90023FCFB /* SelectScanTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectScanTypeViewController.swift; sourceTree = "<group>"; };
 		69B067881D4BE94B0023FCFB /* BuyFilterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyFilterPageViewController.swift; sourceTree = "<group>"; };
+		69CA45071D52690B0095402A /* PreviousScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousScanViewController.swift; sourceTree = "<group>"; };
 		932447A51D499D38003C0F54 /* AnalyzeBlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AnalyzeBlueButton.png; path = Graphics/AnalyzeBlueButton.png; sourceTree = "<group>"; };
 		932447A61D499D38003C0F54 /* BlueOutline-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BlueOutline-Button.png"; path = "Graphics/BlueOutline-Button.png"; sourceTree = "<group>"; };
 		932447A71D499D38003C0F54 /* BlueProfileCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueProfileCircle.png; path = Graphics/BlueProfileCircle.png; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				938E58C51D457D0D004C580F /* AppDelegate.swift */,
 				938E58C71D457D0D004C580F /* ViewController.swift */,
 				938E58C91D457D0D004C580F /* Main.storyboard */,
+				69CA45071D52690B0095402A /* PreviousScanViewController.swift */,
 				69B067881D4BE94B0023FCFB /* BuyFilterPageViewController.swift */,
 				69B067861D4BE4B90023FCFB /* SelectScanTypeViewController.swift */,
 				938E58CC1D457D0D004C580F /* Assets.xcassets */,
@@ -351,6 +354,7 @@
 				938E58C81D457D0D004C580F /* ViewController.swift in Sources */,
 				69B067871D4BE4B90023FCFB /* SelectScanTypeViewController.swift in Sources */,
 				69B067891D4BE94B0023FCFB /* BuyFilterPageViewController.swift in Sources */,
+				69CA45081D52690B0095402A /* PreviousScanViewController.swift in Sources */,
 				938E58C61D457D0D004C580F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
