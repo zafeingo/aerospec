@@ -8,10 +8,10 @@
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
+            <string>Montserrat-Light</string>
+            <string>Montserrat-Light</string>
         </mutableArray>
         <mutableArray key="Montserrat-Regular.otf">
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
@@ -188,6 +188,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4qO-rl-69E">
                                 <rect key="frame" x="20" y="607" width="150" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
                                 <state key="normal" title="Rename" backgroundImage="BlueOutline-Button.png">
                                     <color key="titleColor" red="0.094117647058823528" green="0.14117647058823529" blue="0.7686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -195,6 +196,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y3f-wb-ndI">
                                 <rect key="frame" x="200" y="607" width="150" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
                                 <state key="normal" title="Delete" backgroundImage="PinkButton.png"/>
                                 <connections>
                                     <action selector="deleteButtonClicked:" destination="Kns-JI-PJr" eventType="touchUpInside" id="efG-pl-uLW"/>
@@ -515,37 +517,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Uth-ox-XfQ">
-                                <rect key="frame" x="112" y="105" width="150" height="40"/>
+                                <rect key="frame" x="112" y="88" width="150" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="CalibrateBlueButton.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calibrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="19z-9f-ZGT">
-                                <rect key="frame" x="153" y="116" width="68" height="18"/>
+                                <rect key="frame" x="153" y="99" width="68" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FilterBlurred.png" id="k3e-7s-fDN">
-                                <rect key="frame" x="-12" y="203" width="398" height="297"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ouE-hL-e9h">
-                                <rect key="frame" x="148" y="216" width="78" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SPw-G4-1ac">
-                                <rect key="frame" x="137" y="437" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="StopScanningRedButton.png"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Scanning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e9J-wy-exB">
-                                <rect key="frame" x="151" y="446" width="73" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -684,12 +663,11 @@
         <image name="ResultsGreenButton.png" width="903" height="247"/>
         <image name="StartScanButton.png" width="383" height="383"/>
         <image name="StartScanPinkButton.png" width="2229" height="403"/>
-        <image name="StopScanningRedButton.png" width="641" height="192"/>
         <image name="TableItemBackground.png" width="2444" height="332"/>
         <image name="TableItemDeselect.png" width="144" height="144"/>
         <image name="YellowProfileCircle.png" width="163" height="163"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n59-fl-dSG"/>
+        <segue reference="ykn-Gg-Cp9"/>
     </inferredMetricsTieBreakers>
 </document>
