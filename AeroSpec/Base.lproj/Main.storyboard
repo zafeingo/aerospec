@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -10,8 +10,6 @@
             <string>Montserrat-Light</string>
         </mutableArray>
         <mutableArray key="Montserrat-Regular.otf">
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
@@ -67,7 +65,7 @@
                                     <color key="titleShadowColor" red="0.14376052819999999" green="1" blue="0.10219121389999999" alpha="0.75" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x6d-Ya-S2Y" kind="modal" identifier="LogInClicked" id="J0C-Fz-rrx"/>
+                                    <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTp-Zf-5gN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BFo-NZ-IKZ">
@@ -86,7 +84,7 @@
                                 <rect key="frame" x="24" y="367" width="326" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-UltraLight" family="Montserrat" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9HK-aj-m2o">
                                 <rect key="frame" x="248" y="418" width="102" height="30"/>
@@ -106,6 +104,11 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="LoginButton" destination="Udg-Ua-bFO" id="hUx-wL-TeW"/>
+                        <outlet property="passwordTextField" destination="bQO-zM-5Dr" id="m3A-70-Ycx"/>
+                        <segue destination="x6d-Ya-S2Y" kind="modal" identifier="LoginButtonPressed" id="n59-fl-dSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,27 +188,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4qO-rl-69E">
                                 <rect key="frame" x="20" y="607" width="150" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="BlueOutline-Button.png"/>
+                                <state key="normal" title="Rename" backgroundImage="BlueOutline-Button.png">
+                                    <color key="titleColor" red="0.094117647058823528" green="0.14117647058823529" blue="0.7686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rename" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gr1-KB-6W7">
-                                <rect key="frame" x="64" y="618" width="63" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
-                                <color key="textColor" red="0.14811174468404598" green="0.14789972667592033" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y3f-wb-ndI">
                                 <rect key="frame" x="200" y="607" width="150" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="PinkButton.png"/>
+                                <state key="normal" title="Delete" backgroundImage="PinkButton.png"/>
+                                <connections>
+                                    <action selector="deleteButtonClicked:" destination="Kns-JI-PJr" eventType="touchUpInside" id="efG-pl-uLW"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WTQ-Aw-C4f">
-                                <rect key="frame" x="251" y="618" width="49" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jXu-K3-K6x">
                                 <rect key="frame" x="20" y="43" width="35" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -215,6 +209,46 @@
                                 </state>
                                 <connections>
                                     <segue destination="x6d-Ya-S2Y" kind="modal" id="ykn-Gg-Cp9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wip-mn-sbR">
+                                <rect key="frame" x="0.0" y="118" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="TableItemBackground.png"/>
+                                <connections>
+                                    <action selector="hit1:" destination="Kns-JI-PJr" eventType="touchUpInside" id="oxE-Nw-ANx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a9v-Mm-r35">
+                                <rect key="frame" x="0.0" y="175" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="TableItemBackground.png"/>
+                                <connections>
+                                    <action selector="hit2:" destination="Kns-JI-PJr" eventType="touchUpInside" id="8s7-EI-ThF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LGd-1K-Oy4">
+                                <rect key="frame" x="0.0" y="235" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="TableItemBackground.png"/>
+                                <connections>
+                                    <action selector="hit3:" destination="Kns-JI-PJr" eventType="touchUpInside" id="V9p-Ap-xht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OoA-RX-QGx">
+                                <rect key="frame" x="0.0" y="295" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="TableItemBackground.png"/>
+                                <connections>
+                                    <action selector="hit4:" destination="Kns-JI-PJr" eventType="touchUpInside" id="bwm-1o-g6A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8uR-38-DOv">
+                                <rect key="frame" x="0.0" y="355" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="TableItemBackground.png"/>
+                                <connections>
+                                    <action selector="hit5:" destination="Kns-JI-PJr" eventType="touchUpInside" id="pbQ-Sv-O6X"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinkProfileCircle.png" id="FYO-2M-8uj">
@@ -240,8 +274,8 @@
                                 <rect key="frame" x="338" y="187" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JEr-fA-0vr">
-                                <rect key="frame" x="62" y="191" width="58" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JEr-fA-0vr">
+                                <rect key="frame" x="62" y="191" width="51" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -292,38 +326,6 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a9v-Mm-r35">
-                                <rect key="frame" x="0.0" y="175" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="TableItemBackground.png"/>
-                                <connections>
-                                    <action selector="hit2:" destination="Kns-JI-PJr" eventType="touchUpInside" id="8s7-EI-ThF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LGd-1K-Oy4">
-                                <rect key="frame" x="0.0" y="235" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="TableItemBackground.png"/>
-                                <connections>
-                                    <action selector="hit3:" destination="Kns-JI-PJr" eventType="touchUpInside" id="V9p-Ap-xht"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OoA-RX-QGx">
-                                <rect key="frame" x="0.0" y="295" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="TableItemBackground.png"/>
-                                <connections>
-                                    <action selector="hit4:" destination="Kns-JI-PJr" eventType="touchUpInside" id="bwm-1o-g6A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8uR-38-DOv">
-                                <rect key="frame" x="0.0" y="355" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="TableItemBackground.png"/>
-                                <connections>
-                                    <action selector="hit5:" destination="Kns-JI-PJr" eventType="touchUpInside" id="pbQ-Sv-O6X"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenCheckmark.png" id="Q9a-04-hob">
                                 <rect key="frame" x="338" y="130" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -344,14 +346,6 @@
                                 <rect key="frame" x="338" y="367" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wip-mn-sbR">
-                                <rect key="frame" x="0.0" y="118" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="TableItemBackground.png"/>
-                                <connections>
-                                    <action selector="hit1:" destination="Kns-JI-PJr" eventType="touchUpInside" id="oxE-Nw-ANx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -359,11 +353,32 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="DeleteButton" destination="y3f-wb-ndI" id="Zzk-bh-gCZ"/>
+                        <outlet property="button1" destination="wip-mn-sbR" id="j5j-4h-BvM"/>
+                        <outlet property="button2" destination="a9v-Mm-r35" id="Nfn-Az-foO"/>
+                        <outlet property="button3" destination="LGd-1K-Oy4" id="b9V-fm-2Bd"/>
+                        <outlet property="button4" destination="OoA-RX-QGx" id="mMk-ON-fSF"/>
+                        <outlet property="button5" destination="8uR-38-DOv" id="ehw-kh-AeC"/>
                         <outlet property="check1" destination="Q9a-04-hob" id="apv-Fd-OtF"/>
                         <outlet property="check2" destination="0gG-ks-GAw" id="JS6-m1-9Rd"/>
                         <outlet property="check3" destination="ACR-NP-wlL" id="X3S-er-owb"/>
                         <outlet property="check4" destination="Obk-f0-xFg" id="IxX-Yq-xQf"/>
                         <outlet property="check5" destination="4m9-NP-uFZ" id="C7c-BW-mTq"/>
+                        <outlet property="deselect1" destination="HGC-8g-MXj" id="FG4-Vl-fWE"/>
+                        <outlet property="deselect2" destination="m9W-KY-cMU" id="d54-rB-lWi"/>
+                        <outlet property="deselect3" destination="xqG-XJ-jJD" id="aOP-ww-XDZ"/>
+                        <outlet property="deselect4" destination="3eb-80-4Y7" id="sm0-Al-uAp"/>
+                        <outlet property="deselect5" destination="vxb-Ra-ntJ" id="9V3-NL-F5x"/>
+                        <outlet property="location1" destination="oKM-NN-ma1" id="p1q-r3-3t3"/>
+                        <outlet property="location2" destination="JEr-fA-0vr" id="nkf-dx-ORw"/>
+                        <outlet property="location3" destination="Xzv-Rr-Poq" id="9bs-NV-sy7"/>
+                        <outlet property="location4" destination="cVL-HW-DT0" id="YF0-Cq-K53"/>
+                        <outlet property="location5" destination="2lX-5S-ZoB" id="4AV-ya-7Wq"/>
+                        <outlet property="profile1" destination="FYO-2M-8uj" id="W4d-Mp-cXt"/>
+                        <outlet property="profile2" destination="6i5-gV-2Ly" id="Ntx-B5-OCD"/>
+                        <outlet property="profile3" destination="bnR-ya-oCo" id="a4v-Yz-wpy"/>
+                        <outlet property="profile4" destination="D7l-Qd-9Lv" id="bSg-Vw-8lN"/>
+                        <outlet property="profile5" destination="aZy-tG-Nzk" id="N5v-s1-aXf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSG-RW-0SG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -675,6 +690,6 @@
         <image name="YellowProfileCircle.png" width="163" height="163"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ykn-Gg-Cp9"/>
+        <segue reference="n59-fl-dSG"/>
     </inferredMetricsTieBreakers>
 </document>
