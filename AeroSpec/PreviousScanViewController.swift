@@ -15,6 +15,7 @@ class PreviousScanViewController: UIViewController {
    @IBOutlet weak var button4: UIButton!
    @IBOutlet weak var button5: UIButton!
    @IBOutlet weak var DeleteButton: UIButton!
+   @IBOutlet weak var backButton: UIButton!
    
    @IBOutlet weak var profile1: UIImageView!
    @IBOutlet weak var profile2: UIImageView!
@@ -51,6 +52,10 @@ class PreviousScanViewController: UIViewController {
       
       
       // Do any additional setup after loading the view.
+   }
+   
+   @IBAction func backButtonPressed(sender: AnyObject) {
+      dismissViewControllerAnimated(true, completion: nil)
    }
    
    @IBAction func hit1(sender: AnyObject) {
