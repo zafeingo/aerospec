@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -15,6 +15,8 @@
             <string>Montserrat-Light</string>
         </mutableArray>
         <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
@@ -583,10 +585,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nz9-fM-L7O">
-                                <rect key="frame" x="12" y="200" width="350" height="70"/>
+                                <rect key="frame" x="12" y="199" width="350" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                                <state key="normal" title="Outdoor" backgroundImage="InOutDoorDeselect.png"/>
+                                <state key="normal" backgroundImage="InOutDoorDeselect.png"/>
                                 <state key="selected" title="Selected" image="InOutDoorSelect.png"/>
                                 <connections>
                                     <action selector="outdoorTap:" destination="2aB-fS-oZM" eventType="touchUpInside" id="2Sc-Ja-ekB"/>
@@ -596,7 +598,7 @@
                                 <rect key="frame" x="12" y="300" width="350" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                                <state key="normal" title="Indoor" backgroundImage="InOutDoorDeselect.png"/>
+                                <state key="normal" backgroundImage="InOutDoorDeselect.png"/>
                                 <state key="selected" title="Selected" image="InOutDoorSelect.png"/>
                                 <connections>
                                     <action selector="indoorTap:" destination="2aB-fS-oZM" eventType="touchUpInside" id="dhh-4d-b4c"/>
@@ -614,6 +616,20 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outdoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8x2-WS-2MS">
+                                <rect key="frame" x="145" y="222" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UIg-VS-YWA">
+                                <rect key="frame" x="154" y="322" width="66" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -628,6 +644,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2H-33-07x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1393.5" y="328.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oKk-at-9LT">
+            <objects>
+                <viewController id="NIL-TE-s5R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DK9-LU-u6c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpD-6l-Pir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="279"/>
         </scene>
     </scenes>
     <resources>
@@ -654,7 +684,7 @@
         <image name="YellowProfileCircle.png" width="163" height="163"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hcu-qn-7du"/>
         <segue reference="Ak6-Wx-HEw"/>
+        <segue reference="z0v-oW-cBv"/>
     </inferredMetricsTieBreakers>
 </document>
