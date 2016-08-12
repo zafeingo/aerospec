@@ -15,13 +15,20 @@ class SelectScanTypeViewController: UIViewController {
     
     
     @IBAction func outdoorTap(sender: AnyObject) {
-        indoorButton.selected = false
-        outdoorButton.selected = true
+        if(outdoorButton.selected == false){
+            outdoorButton.selected = true;
+        } else {
+            outdoorButton.selected = false;
+        }
+        
     }
     
     @IBAction func indoorTap(sender: AnyObject) {
-        outdoorButton.selected = false
-        indoorButton.selected = true
+        if(indoorButton.selected == false){
+            indoorButton.selected = true;
+        } else {
+            indoorButton.selected = false;
+        }
     }
     
     override func viewDidLoad() {
