@@ -9,19 +9,17 @@
 import UIKit
 import Foundation
 
-class BuyFilterPageViewController: UIViewController {
-
+class BuyFilterPageViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var filterNumber: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-/*
-        // Do any additional setup after loading the view.
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.bounds
-        blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight] // for supporting device rotation
-        view.addSubview(blurEffectView)
- */
-      
+        self.filterNumber.delegate = self
+    }
+    func textFieldShouldReturn(passwordTextField: UITextField!) -> Bool {
+        passwordTextField.resignFirstResponder()
+        return true;
     }
 
     override func didReceiveMemoryWarning() {

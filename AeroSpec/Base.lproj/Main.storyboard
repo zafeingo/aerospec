@@ -393,7 +393,7 @@
         <!--OrderScreen-->
         <scene sceneID="U7j-Uc-D5f">
             <objects>
-                <viewController title="OrderScreen" modalPresentationStyle="overCurrentContext" id="T7Z-8l-Bbg" sceneMemberID="viewController">
+                <viewController title="OrderScreen" modalPresentationStyle="overCurrentContext" id="T7Z-8l-Bbg" customClass="BuyFilterPageViewController" customModule="AeroSpec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="JxK-8J-iPZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -489,6 +489,9 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="filterNumber" destination="sZt-BQ-7Ja" id="h2s-k3-ej1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qgl-Tp-DfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -685,6 +688,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ak6-Wx-HEw"/>
-        <segue reference="z0v-oW-cBv"/>
+        <segue reference="hcu-qn-7du"/>
     </inferredMetricsTieBreakers>
 </document>

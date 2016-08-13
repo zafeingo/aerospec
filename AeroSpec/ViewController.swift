@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
    let password = "123456"
    //MARK: Properties:
    @IBOutlet weak var LoginButton: UIButton!
@@ -16,8 +16,13 @@ class ViewController: UIViewController {
    
    override func viewDidLoad() {
       super.viewDidLoad()
+        self.passwordTextField.delegate = self
       // Do any additional setup after loading the view, typically from a nib.
    }
+    func textFieldShouldReturn(passwordTextField: UITextField!) -> Bool {
+        passwordTextField.resignFirstResponder()
+        return true;
+    }
    
    override func didReceiveMemoryWarning() {
       super.didReceiveMemoryWarning()
