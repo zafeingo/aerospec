@@ -48,6 +48,7 @@
 		938E58CD1D457D0D004C580F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938E58CC1D457D0D004C580F /* Assets.xcassets */; };
 		938E58D01D457D0D004C580F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938E58CE1D457D0D004C580F /* LaunchScreen.storyboard */; };
 		938E58DB1D457D0D004C580F /* AeroSpecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E58DA1D457D0D004C580F /* AeroSpecTests.swift */; };
+		93A019A81D5D4DE00053FA58 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A019A71D5D4DE00053FA58 /* Timer.swift */; };
 		93E6777E1D57DE4900B231FE /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E6777D1D57DE4900B231FE /* AnalyzeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		938E58D61D457D0D004C580F /* AeroSpecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AeroSpecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938E58DA1D457D0D004C580F /* AeroSpecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AeroSpecTests.swift; sourceTree = "<group>"; };
 		938E58DC1D457D0D004C580F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A019A71D5D4DE00053FA58 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = AeroSpec/Timer.swift; sourceTree = "<group>"; };
 		93E6777D1D57DE4900B231FE /* AnalyzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 		938E58B91D457D0D004C580F = {
 			isa = PBXGroup;
 			children = (
+				93A019A71D5D4DE00053FA58 /* Timer.swift */,
 				938E58C41D457D0D004C580F /* AeroSpec */,
 				938E58D91D457D0D004C580F /* AeroSpecTests */,
 				938E58C31D457D0D004C580F /* Products */,
@@ -356,6 +359,7 @@
 			files = (
 				938E58C81D457D0D004C580F /* ViewController.swift in Sources */,
 				69B067871D4BE4B90023FCFB /* SelectScanTypeViewController.swift in Sources */,
+				93A019A81D5D4DE00053FA58 /* Timer.swift in Sources */,
 				69B067891D4BE94B0023FCFB /* BuyFilterPageViewController.swift in Sources */,
 				69CA45081D52690B0095402A /* PreviousScanViewController.swift in Sources */,
 				938E58C61D457D0D004C580F /* AppDelegate.swift in Sources */,

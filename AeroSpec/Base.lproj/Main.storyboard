@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -15,8 +15,6 @@
             <string>Montserrat-Light</string>
         </mutableArray>
         <mutableArray key="Montserrat-Regular.otf">
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
@@ -588,21 +586,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nz9-fM-L7O">
-                                <rect key="frame" x="12" y="199" width="350" height="70"/>
+                                <rect key="frame" x="12" y="130" width="350" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                                <state key="normal" backgroundImage="InOutDoorDeselect.png"/>
-                                <state key="selected" title="Selected" image="InOutDoorSelect.png"/>
+                                <state key="normal" title="Outdoor" backgroundImage="InOutDoorDeselect.png"/>
+                                <state key="selected" title="Outdoor" backgroundImage="InOutDoorSelect.png"/>
                                 <connections>
                                     <action selector="outdoorTap:" destination="2aB-fS-oZM" eventType="touchUpInside" id="2Sc-Ja-ekB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mcf-NF-Kot">
-                                <rect key="frame" x="12" y="300" width="350" height="70"/>
+                                <rect key="frame" x="12" y="228" width="350" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                                <state key="normal" backgroundImage="InOutDoorDeselect.png"/>
-                                <state key="selected" title="Selected" image="InOutDoorSelect.png"/>
+                                <state key="normal" title="Indoor" backgroundImage="InOutDoorDeselect.png"/>
+                                <state key="selected" title="Indoor" backgroundImage="InOutDoorSelect.png"/>
                                 <connections>
                                     <action selector="indoorTap:" destination="2aB-fS-oZM" eventType="touchUpInside" id="dhh-4d-b4c"/>
                                 </connections>
@@ -611,26 +609,22 @@
                                 <rect key="frame" x="148" y="512" width="79" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="StartScanButton.png"/>
+                                <connections>
+                                    <action selector="ScanButtonPressed:" destination="2aB-fS-oZM" eventType="touchUpInside" id="STv-J6-Jn6"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LNA-k7-HH9">
-                                <rect key="frame" x="163" y="597" width="48" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining: 3:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4kA-sh-0rc">
+                                <rect key="frame" x="94" y="408" width="186" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LNA-k7-HH9">
+                                <rect key="frame" x="148" y="597" width="79" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outdoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8x2-WS-2MS">
-                                <rect key="frame" x="145" y="222" width="84" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indoor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UIg-VS-YWA">
-                                <rect key="frame" x="154" y="322" width="66" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -640,6 +634,9 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="ScanButton" destination="CxR-g4-NXI" id="Tov-Lq-0iu"/>
+                        <outlet property="ScanLabelText" destination="LNA-k7-HH9" id="Kqd-v4-Ewj"/>
+                        <outlet property="TimerLabel" destination="4kA-sh-0rc" id="xlc-Vi-kJW"/>
                         <outlet property="indoorButton" destination="mcf-NF-Kot" id="qgB-jE-QvT"/>
                         <outlet property="outdoorButton" destination="Nz9-fM-L7O" id="ZTz-NO-1OE"/>
                     </connections>
@@ -647,20 +644,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2H-33-07x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1393.5" y="328.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="oKk-at-9LT">
-            <objects>
-                <viewController id="NIL-TE-s5R" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DK9-LU-u6c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wpD-6l-Pir" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1851" y="279"/>
         </scene>
     </scenes>
     <resources>
