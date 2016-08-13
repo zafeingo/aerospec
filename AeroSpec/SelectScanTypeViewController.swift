@@ -15,30 +15,56 @@ class SelectScanTypeViewController: UIViewController {
    @IBOutlet weak var TimerLabel: UILabel!
    @IBOutlet weak var ScanButton: UIButton!
    @IBOutlet weak var ScanLabelText: UILabel!
-   
-   
+   @IBOutlet weak var header: UILabel!
+   @IBOutlet weak var ProgressLabel: UIProgressView!
+    
 //   var timerCounter:NSTimeInterval!
-   var count = 180
+   var count = 0;
    var minutes = 0
    var seconds = 0
+   var increment = 0.0;
+   var pressed = false;
    @IBAction func outdoorTap(sender: AnyObject) {
       if(outdoorButton.selected == false){
          outdoorButton.selected = true;
+        count += 180;
       } else {
          outdoorButton.selected = false;
+        count -= 180;
       }
-      
+    if(count > 0) {
+        TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", count/60, count - (minutes * 60)) as String
+    } else {
+        TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", 0, 0) as String
+    }
+    
    }
    
    @IBAction func indoorTap(sender: AnyObject) {
       if(indoorButton.selected == false){
          indoorButton.selected = true;
+        count += 90;
       } else {
          indoorButton.selected = false;
+        count -= 90;
       }
+    if(count > 0) {
+        TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", count/60, count - (minutes * 60)) as String
+    } else {
+        TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", 0, 0) as String
+    }
    }
    
    @IBAction func ScanButtonPressed(sender: AnyObject) {
+    outdoorButton.hidden = true;
+    indoorButton.hidden = true;
+    header.text = "SCANNING";
+    header.textAlignment = NSTextAlignment.Center;
+    ProgressLabel.hidden = false;
+    if(pressed == false) {
+        increment = 1.0 / Double(count);
+    }
+    
       //if (indoorButton.selected == true || outdoorButton.selected == true) {
          var _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SelectScanTypeViewController.update), userInfo: nil, repeats: true)
 //      } else {
@@ -63,12 +89,17 @@ class SelectScanTypeViewController: UIViewController {
          minutes = count / 60
          seconds = count - (minutes * 60)
          TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", minutes, seconds) as String
+        
+        
+        let floatIncrement = Float(increment);
+        ProgressLabel.progress -= floatIncrement;
       }
    }
    
    override func viewDidLoad() {
       super.viewDidLoad()
-      
+      ProgressLabel.hidden = true;
+      ProgressLabel.setProgress(100, animated: true)
       // Do any additional setup after loading the view.
    }
    
