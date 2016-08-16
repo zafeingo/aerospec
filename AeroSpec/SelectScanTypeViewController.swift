@@ -20,40 +20,33 @@ class SelectScanTypeViewController: UIViewController {
     
 //   var timerCounter:NSTimeInterval!
    var count = 0;
-   var minutes = 0
-   var seconds = 0
    var increment = 0.0;
    var pressed = false;
+    
    @IBAction func outdoorTap(sender: AnyObject) {
       if(outdoorButton.selected == false){
          outdoorButton.selected = true;
         count += 180;
+        calcTime();
       } else {
          outdoorButton.selected = false;
         count -= 180;
+        calcTime();
       }
-    if(count > 0) {
-        TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", count/60, count - (minutes * 60)) as String
-    } else {
-        TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", 0, 0) as String
-    }
-    
    }
    
    @IBAction func indoorTap(sender: AnyObject) {
       if(indoorButton.selected == false){
          indoorButton.selected = true;
         count += 90;
+        calcTime();
       } else {
          indoorButton.selected = false;
         count -= 90;
+        calcTime();
       }
-    if(count > 0) {
-        TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", count/60, count - (minutes * 60)) as String
-    } else {
-        TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", 0, 0) as String
+    
     }
-   }
    
    @IBAction func ScanButtonPressed(sender: AnyObject) {
     outdoorButton.hidden = true;
@@ -86,15 +79,24 @@ class SelectScanTypeViewController: UIViewController {
    func update() {
       if(count > 0) {
          count -= 1
-         minutes = count / 60
-         seconds = count - (minutes * 60)
-         TimerLabel.text = NSString.localizedStringWithFormat("Time Remaining: %2d:%2d", minutes, seconds) as String
-        
+
+        calcTime();
         
         let floatIncrement = Float(increment);
         ProgressLabel.progress -= floatIncrement;
       }
    }
+    func calcTime()  {
+        let min = count / 60;
+        
+        let minutesZ = UInt8(count / 60);
+        let secondsZ = UInt8(count - (min * 60));
+        
+        let strMinutes = String(format: "%2d", minutesZ);
+        let strSeconds = String(format: "%02d", secondsZ);
+        
+        TimerLabel.text = "Time Remaining: \(strMinutes):\(strSeconds)";
+    }
    
    override func viewDidLoad() {
       super.viewDidLoad()
