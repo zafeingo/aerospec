@@ -19,9 +19,11 @@ class SelectScanTypeViewController: UIViewController {
    @IBOutlet weak var ProgressLabel: UIProgressView!
     
 //   var timerCounter:NSTimeInterval!
-   var count = 0;
-   var increment = 0.0;
-   var pressed = false;
+    var count = 0;
+    var increment = 0.0;
+    var pressed = false;
+    var paused = false;
+    var started = false;
     
    @IBAction func outdoorTap(sender: AnyObject) {
       if(outdoorButton.selected == false){
@@ -45,7 +47,6 @@ class SelectScanTypeViewController: UIViewController {
         count -= 90;
         calcTime();
       }
-    
     }
    
    @IBAction func ScanButtonPressed(sender: AnyObject) {
@@ -56,6 +57,7 @@ class SelectScanTypeViewController: UIViewController {
     ProgressLabel.hidden = false;
     if(pressed == false) {
         increment = 1.0 / Double(count);
+        pressed = true;
     }
     
       //if (indoorButton.selected == true || outdoorButton.selected == true) {
@@ -65,19 +67,25 @@ class SelectScanTypeViewController: UIViewController {
 //            "Please specify whether this is an indoor and/or outdoor scan to proceed.", preferredStyle: UIAlertControllerStyle.Alert)
 //         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
 //      }
-      if (ScanLabelText.text == "START") {
-         ScanLabelText.text = "PAUSE"
-         //ScanButton.setBackgroundImage("Pause.png", forState: <#T##UIControlState#>)
-         //Pause timer
-      } else if (ScanLabelText.text == "PAUSE") {
-         ScanLabelText.text = "START"
-         //ScanButton.setBackgroundImage("Start.png", forState: <#T##UIControlState#>)
-         //Resume timer
+    
+    if (paused == false && started == true) {
+        ScanLabelText.text = "PAUSED"
+        ScanButton.selected = true;
+        paused = true;
+    } else if (paused == true && started == true) {
+        ScanLabelText.text = "START"
+        ScanButton.selected = false;
+        paused = false;
       }
+    
+    started = true;
+    if(paused == false) {
+        ScanLabelText.text = "SCANNING";
+    }
    }
 
    func update() {
-      if(count > 0) {
+      if(count > 0 && paused == false) {
          count -= 1
 
         calcTime();
@@ -101,7 +109,7 @@ class SelectScanTypeViewController: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       ProgressLabel.hidden = true;
-      ProgressLabel.setProgress(100, animated: true)
+      ProgressLabel.setProgress(100, animated: true);
       // Do any additional setup after loading the view.
    }
    
