@@ -91,7 +91,7 @@ class SelectScanTypeViewController: UIViewController {
         calcTime();
         
         let floatIncrement = Float(increment);
-        ProgressLabel.progress -= floatIncrement;
+        ProgressLabel.progress += floatIncrement;
       }
    }
     func calcTime()  {
@@ -109,7 +109,7 @@ class SelectScanTypeViewController: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       ProgressLabel.hidden = true;
-      ProgressLabel.setProgress(100, animated: true);
+      ProgressLabel.setProgress(0, animated: true);
       // Do any additional setup after loading the view.
    }
    
