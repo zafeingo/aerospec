@@ -18,7 +18,7 @@ class SelectScanTypeViewController: UIViewController {
    @IBOutlet weak var header: UILabel!
    @IBOutlet weak var ProgressLabel: UIProgressView!
     
-//   var timerCounter:NSTimeInterval!
+    var timerCounter:NSTimeInterval!
     var count = 0;
     var increment = 0.0;
     var pressed = false;
@@ -36,6 +36,7 @@ class SelectScanTypeViewController: UIViewController {
         calcTime();
       }
    }
+ 
    
    @IBAction func indoorTap(sender: AnyObject) {
       if(indoorButton.selected == false){
@@ -60,13 +61,7 @@ class SelectScanTypeViewController: UIViewController {
         pressed = true;
     }
     
-      //if (indoorButton.selected == true || outdoorButton.selected == true) {
          var _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SelectScanTypeViewController.update), userInfo: nil, repeats: true)
-//      } else {
-//         let alertController = UIAlertController(title: "Unable to Start Scan", message:
-//            "Please specify whether this is an indoor and/or outdoor scan to proceed.", preferredStyle: UIAlertControllerStyle.Alert)
-//         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-//      }
     
     if (paused == false && started == true) {
         ScanLabelText.text = "PAUSED"
