@@ -274,9 +274,11 @@
 					938E58C11D457D0D004C580F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = KMD9H6XRAT;
+						LastSwiftMigration = 0800;
 					};
 					938E58D51D457D0D004C580F = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 938E58C11D457D0D004C580F;
 					};
 				};
@@ -500,6 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nrg-lab.AeroSpec";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -515,6 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nrg-lab.AeroSpec";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -526,6 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nrg-lab.AeroSpecTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AeroSpec.app/AeroSpec";
 			};
 			name = Debug;
@@ -538,6 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nrg-lab.AeroSpecTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AeroSpec.app/AeroSpec";
 			};
 			name = Release;
