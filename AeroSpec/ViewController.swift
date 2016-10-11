@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.passwordTextField.delegate = self
       // Do any additional setup after loading the view, typically from a nib.
    }
-    func textFieldShouldReturn(passwordTextField: UITextField!) -> Bool {
+    func textFieldShouldReturn(passwordTextField: UITextField) -> Bool {
         passwordTextField.resignFirstResponder()
         return true;
     }

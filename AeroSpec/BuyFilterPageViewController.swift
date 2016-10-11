@@ -17,7 +17,7 @@ class BuyFilterPageViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.filterNumber.delegate = self
     }
-    func textFieldShouldReturn(passwordTextField: UITextField!) -> Bool {
+    func textFieldShouldReturn(passwordTextField: UITextField) -> Bool {
         passwordTextField.resignFirstResponder()
         return true;
     }
